@@ -1,0 +1,17 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# expo
+BetterMenuApp/.expo/
+
+# dependencies
+BetterMenuApp/node_modules
+
+# misc
+BetterMenuApp/.env.local
+BetterMenuApp/.env.development.local
+BetterMenuApp/.env.test.local
+BetterMenuApp/.env.production.local
+
+BetterMenuApp/npm-debug.log*
+BetterMenuApp/yarn-debug.log*
+BetterMenuApp/yarn-error.log*
