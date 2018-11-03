@@ -24,6 +24,9 @@ const RootStack = createStackNavigator(
   },
   {
     initialRouteName: 'Home',
+    navigationOptions: {
+        title: "BetterMenu"
+    }
   }
 );
 

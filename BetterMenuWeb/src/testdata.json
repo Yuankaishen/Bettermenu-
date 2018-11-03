@@ -1,0 +1,83 @@
+{
+    "info": [
+        {
+            "_id": "5a9958772ce0c0d9655",
+            "restaurant": "Collegetown Bagels",
+            "food": "Big Sur",
+            "price": "$6.45",
+            "categories": ["breakfast", "snack"],
+            "searchTerms": ["bagel", "breakfast", "sauage"],
+            "location": "415 College Ave, Ithaca, NY 14850",
+            "pictures": ["http://", "http://"],
+            "description": "Sausage, scrambled eggs, tomato & melted Pepperjack cheese on a bagel",
+            "reviews": [
+                {
+                    "rating": 1,
+                    "comment": "Great Food!",
+                    "tags": ["Tasty", "spicy"]
+                },
+                {
+                    "rating": 1,
+                    "comment": "Great Food!",
+                    "tags": ["Tasty", "spicy"]
+                },
+                {
+                    "rating": 0,
+                    "comment": "Bad Food!",
+                    "tags": []
+                },
+                {
+                    "rating": 1,
+                    "comment": "Great Food!",
+                    "tags": ["Mild"]
+                }
+            ],
+            "flags": [
+                {
+                    "unavailable": 0,
+                    "badPrice": 0
+                }
+            ]
+        },
+
+        {
+            "_id": "7a349875ce0c0d3425",
+            "restaurant": "Collegetown Bagels",
+            "food": "Round House",
+            "price": "$8.20",
+            "categories": ["breakfast", "snack"],
+            "searchTerms": ["bagel", "breakfast", "bacon"],
+            "location": "415 College Ave, Ithaca, NY 14850",
+            "pictures": ["http://", "http://"],
+            "description": "Scramble eggs, bacon, sausage, pepper jack cheese & a hash brown on a rosemary salt bagel",
+            "reviews": [
+                {
+                    "rating": 0,
+                    "comment": "Too salty",
+                    "tags": ["Salty"]
+                },
+                {
+                    "rating": 1,
+                    "comment": "Amazing food, creative combinations",
+                    "tags": ["Tasty"]
+                },
+                {
+                    "rating": 0,
+                    "comment": "Bad Food",
+                    "tags": []
+                },
+                {
+                    "rating": 1,
+                    "comment": "Great Food",
+                    "tags": ["Mild", "Salty"]
+                }
+            ],
+            "flags": [
+                {
+                    "unavailable": 0,
+                    "badPrice": 0
+                }
+            ]
+        }
+    ]
+}
