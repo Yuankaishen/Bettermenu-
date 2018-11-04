@@ -1,5 +1,9 @@
-import React from 'react';
-class FoodItem extends React.Component {
+import React, { Component } from 'react';
+
+//CSS
+import '../css/food_item.css';
+
+class FoodItem extends Component {
     render() {
         let data = this.props.item;
         let index = this.props.ind;
@@ -11,7 +15,7 @@ class FoodItem extends React.Component {
         let flags = data["flags"];
   
         return (
-           <ul key={index}>
+           <ul className="food-item-ul" key={index}>
               <li>{data["_id"]}</li>
               <li>{data["restaurant"]}</li>
               <li>{data["food"]}</li>

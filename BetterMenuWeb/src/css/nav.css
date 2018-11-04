@@ -1,0 +1,23 @@
+.nav-div {background-color: grey;}
+
+.nav-ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    height: 49px;
+
+    align-items: center;
+}
+
+ul.nav-ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav-ul li a:hover {
+    background-color: #111;
+}

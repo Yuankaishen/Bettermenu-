@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+//Pages
+import Main from './pages/main';
+import FoodList from './pages/food_list';
+
+//Components
+import Navigation from './components/navigation';
+import Footer from './components/footer';
+
+//CSS
 import './App.css';
-import td from './testdata.json';
-import FoodItem from './components/food_item';
 
 class App extends Component {
-   render() {
-      let dataMap = []
-      for (let i = 0; i < td.info.length; i++) {
-         dataMap.push(td.info[i]);
-      }
+    render() {
+        return (
+            <Router>
+                <div className="App-div">
+                    <Navigation/>
 
-      return (
-         <div>
-            {
-               dataMap.map((item, key) => (
-                  <FoodItem item={item} ind={key} key={key} />
-               ))
-            }
-         </div>
-      );
-   }
+                    <Route exact path='/' component={Main}/>
+                    <Route exact path='/foodlist' component={FoodList}/>
+
+                    <Footer/>
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;
