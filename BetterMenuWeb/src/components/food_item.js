@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Column, Row } from 'simple-flexbox';
 
 //CSS
 import '../css/food_item.css';
@@ -15,65 +16,31 @@ class FoodItem extends Component {
         let flags = data["flags"];
   
         return (
-           <ul className="food-item-ul" key={index}>
-              <li>{data["_id"]}</li>
-              <li>{data["restaurant"]}</li>
-              <li>{data["food"]}</li>
-              <li>{data["price"]}</li>
-              <ul>
-              {
-                 categories.map((item, key) => (
-                    <li key={key}>{item}</li>
-                 ))
-              }
-              </ul>
-              <ul>
-              {
-                 searchTerms.map((item, key) => (
-                    <li key={key}>{item}</li>
-                 ))
-              }
-              </ul>
-              <li>{data["location"]}</li>
-              <ul>
-              {
-                 pictures.map((item, key) => (
-                    <li key={key}>{item}</li>
-                 ))
-              }
-              </ul>
-              <li>{data["description"]}</li>
-              <ul>
-              {
-                 reviews.map((item, key) => (
-                    <ul key={key}>
-                    Reviews:
-                    {
-                       Object.keys(item).map((val, ind) => (
-                          <li key={ind}>{val}: {item[val]}</li>
-                       ))
-                    }
-                    </ul>
-                 ))
-              }
-              </ul>
-              <ul>
-              {
-                 flags.map((item, key) => (
-                    <ul key={key}>
-                    Flags:
-                    {
-                       Object.keys(item).map((val, ind) => (
-                          <li key={ind}>{val}: {item[val]}</li>
-                       ))
-                    }
-                    </ul>
-                 ))
-              }
-              </ul>
-           </ul>
+            <Row flexGrow={1} vertical='center' horizontal='spaced' style={{backgroundColor: 'grey', maxWidth: 300 }}>
+                <Column style={{ backgroundColor: 'blue', color: 'white' }}>
+                    <span> Content 1 </span>
+                    <span> Content 2 </span>
+                </Column>
+                <Column style={{ backgroundColor: 'red', color: 'white' }}>
+                    <span> Content 3 </span>
+                    <span> Content 4 </span>
+                    <span> Content 5 </span>
+                </Column>
+            </Row>
+
+            // <ul className="food-item-ul" key={index}>
+            //     {
+            //         pictures.map((item, key) => (
+            //             <img src={item} alt="sandwich" height={100}/>
+            //         ))
+            //     }
+
+            //     <h2>{data["food"]}</h2>
+            //     <h6>{data["restaurant"]}</h6>
+            //     <h4>{data["price"]}</h4>
+            // </ul>
         );
-     }
-  }
+    }
+}
 
   export default FoodItem;
