@@ -15,6 +15,9 @@ class Navigation extends Component {
                     <li>
                         <Link to="/foodlist">Food list</Link>
                     </li>
+                    <li>
+                        <Link to="/review">Review</Link>
+                    </li>
                 </ul>
             </div>
         );
